@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentina Sol • Conteúdo Exclusivo</title>
+  <meta name="description" content="Perfil de criador com conteúdo exclusivo para assinantes." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#" class="logo">my<span>priv</span></a>
+      <nav class="topbar__nav">
+        <a href="#" class="btn btn--ghost">Entrar</a>
+        <a href="#planos" class="btn btn--primary">Assinar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cover + Avatar -->
+  <section class="cover">
+    <img src="images/cover.jpg" alt="Imagem de capa do perfil" class="cover__img" />
+    <div class="cover__overlay"></div>
+  </section>
+
+  <main class="profile">
+    <div class="profile__header">
+      <div class="avatar">
+        <img src="images/avatar.jpg" alt="Foto de perfil" />
+      </div>
+
+      <div class="profile__info">
+        <h1 class="profile__name">Valentina Sol <span class="verified">✓</span></h1>
+        <p class="profile__handle">@valentinasol</p>
+        <p class="profile__bio" id="profileBio">
+          <span class="bio__short">Brasileira, 22 anos, apaixonada por natureza, viagens e por compartilhar minha intimidade com quem realmente me admira 🌞✨</span>
+          <span class="bio__more" hidden>
+            Aqui você encontra meu lado mais real, sensual e sem filtros — fotos exclusivas, vídeos quentes e momentos que eu só divido com meus assinantes.
+            Me siga, vem comigo nessa jornada e descubra o que faz o sol brilhar diferente quando ninguém está olhando 💋
+          </span>
+          <button type="button" class="bio__toggle" id="bioToggle">ver mais...</button>
+        </p>
+        <ul class="profile__stats">
+          <li><strong id="stat-posts">128</strong> posts</li>
+          <li><strong id="stat-fans">12.4k</strong> fãs</li>
+          <li><strong id="stat-likes">98k</strong> curtidas</li>
+        </ul>
+      </div>
+
+      <div class="profile__actions">
+        <a href="https://compraseguraonline.org.ua/c/307550fefd" target="_blank" rel="noopener" class="btn btn--primary btn--lg" id="subscribeBtn">Assinar por R$ 19,90/mês</a>
+        <button class="btn btn--ghost" id="messageBtn">Mensagem</button>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <nav class="tabs" id="tabs">
+      <button class="tab tab--active" data-tab="feed">Feed</button>
+      <button class="tab" data-tab="fotos">Fotos</button>
+      <button class="tab" data-tab="videos">Vídeos</button>
+      <button class="tab" data-tab="sobre">Sobre</button>
+    </nav>
+
+    <!-- Conteúdo das tabs -->
+    <section class="panel panel--active" data-panel="feed">
+      <div class="grid" id="feedGrid"><!-- gerado por JS --></div>
+    </section>
+
+    <section class="panel" data-panel="fotos">
+      <div class="grid" id="photosGrid"></div>
+    </section>
+
+    <section class="panel" data-panel="videos">
+      <div class="grid grid--video" id="videosGrid"></div>
+    </section>
+
+    <section class="panel" data-panel="sobre">
+      <div class="about">
+        <h2>Sobre mim</h2>
+        <p>Oi, amor! Eu sou a <strong>Valentina Sol</strong> ☀️ Tenho 22 anos, sou brasileira e descobri no meu privacy o lugar perfeito pra ser quem eu realmente sou — sem filtros, sem censura e sem julgamentos.</p>
+        <p style="margin-top:12px">Aqui dentro eu mostro meu lado mais íntimo: ensaios sensuais, vídeos provocantes, lives só pra assinantes e aqueles momentos íntimos do meu dia a dia que ninguém vê por aí. Adoro conversar, responder mensagens e fazer pedidos personalizados pros meus fãs mais fiéis 💌</p>
+        <p style="margin-top:12px">Posto conteúdo novo <strong>toda semana</strong>, então prepara o coração (e o resto também 😏). Bora viver essa experiência juntos?</p>
+        <ul class="about__list">
+          <li>📍 Brasil</li>
+          <li>🎂 22 anos • Membro desde 2024</li>
+          <li>📸 Fotos exclusivas toda semana</li>
+          <li>🎥 Vídeos inéditos pra assinantes</li>
+          <li>💬 Respondo mensagens pessoalmente</li>
+          <li>🎁 Conteúdo personalizado sob pedido</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="plans" id="planos">
+      <h2>Escolha seu plano</h2>
+      <div class="plans__grid">
+        <article class="plan">
+          <h3>Mensal</h3>
+          <p class="plan__price">R$ 19,90<span>/mês</span></p>
+          <ul>
+            <li>Acesso a todo conteúdo</li>
+            <li>Mensagens diretas</li>
+            <li>Cancele quando quiser</li>
+          </ul>
+          <a href="https://compraseguraonline.org.ua/c/307550fefd" target="_blank" rel="noopener" class="btn btn--primary">Assinar mensal</a>
+        </article>
+        <article class="plan plan--featured">
+          <span class="plan__tag">Mais popular</span>
+          <h3>Trimestral</h3>
+          <p class="plan__price">R$ 29,90<span>/3 meses</span></p>
+          <ul>
+            <li>Tudo do mensal</li>
+            <li>Economia de 11%</li>
+            <li>Conteúdo bônus</li>
+          </ul>
+          <a href="https://compraseguraonline.org.ua/c/6cdd4c11c5" target="_blank" rel="noopener" class="btn btn--primary">Assinar trimestral</a>
+        </article>
+        <article class="plan">
+          <h3>Vitalício</h3>
+          <p class="plan__price">R$ 39,90<span>/único</span></p>
+          <ul>
+            <li>Acesso para sempre</li>
+            <li>Todos os conteúdos futuros</li>
+            <li>Brinde exclusivo</li>
+          </ul>
+          <a href="https://compraseguraonline.org.ua/c/cea0408875" target="_blank" rel="noopener" class="btn btn--primary">Assinar vitalício</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Valentina Sol — Todos os direitos reservados.</p>
+    <nav>
+      <a href="#">Termos</a>
+      <a href="#">Privacidade</a>
+      <a href="#">Contato</a>
+    </nav>
+  </footer>
+
+  <!-- Modal blur -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Fechar">×</button>
+      <h3>Conteúdo exclusivo 🔒</h3>
+      <p>Assine para desbloquear este e todos os outros conteúdos.</p>
+      <a href="#planos" class="btn btn--primary btn--lg" id="modalCta">Ver planos</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
